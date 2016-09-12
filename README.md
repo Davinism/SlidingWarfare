@@ -32,7 +32,12 @@ In addition, this project will include:
 This game will have a modal that includes directions before starting the game. The game itself will take up most of the browser window, with the title of the game at the top along with some short reminder of the controls. At the bottom will be a link to the Github with my name.
 
 ![wireframes](wireframes/controls.png)
+
+The directions modal.
+
 ![wireframes](wireframes/game_screen.png)
+
+The game screen.
 
 ### Architecture and Technologies
 
