@@ -19,7 +19,7 @@ In Sliding Warfare, users will be able to:
 
 - [ ] Select shooters that they want to move
 - [ ] Adjust rotation of the chosen shooter
-- [ ] Slide the shooter around during a 1-second window
+- [ ] Slide the shooter around and have two "actions" per turn
 - [ ] Take out opponent shooters and base
 
 In addition, this project will include:
