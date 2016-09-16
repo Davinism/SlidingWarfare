@@ -148,3 +148,11 @@ I would also like to include more terrains for players to play on to keep games 
 #### Health
 
 As of right now, bases take just one hit to take out. I may include a health feature for bases if taking them out becomes too easy.
+
+#### Visual Styling
+
+Enhance the visuals by using sprites and images in place of elemental Canvas renderings.
+
+#### AI
+
+Offer users the option of playing against an AI for a 1-player option.
