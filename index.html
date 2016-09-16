@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Exo:400,700|Orbitron:400,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./assets/application.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script type="application/javascript" src="./lib/keymaster.js"></script>
@@ -10,8 +11,56 @@
     <title></title>
   </head>
   <body>
-    <div class="canvas-container">
+    <div id="game-title-container">
+      <section id="game-info">
+        <div>
+          <h1>SLIDING WARFARE</h1>
+          <ul>
+            <li><span>Objective:</span></li>
+            <li>Shoot all enemy shooters or shoot the enemy base first before the enemy does!</li>
+            <li><span>Rules:</span></li>
+            <li>Use keyboard to select and move and fire shooters.</li>
+            <li>Only allowed 3 actions per turn.</li>
+            <li>Translation (W, A, S, D, and Arrow Keys) and Shooting count as 1 action each.</li>
+            <li>All other moves(rotation, toggling shooters) does not take up an action.</li>
+          </ul>
+          <p>Press Enter to play</p>
+        </div>
+      </section>
+    </div>
+
+    <div id="canvas-container">
+      <section class="instructions">
+        <ul class="instructions-list">
+          <li><span>Move Up: </span>W or Up Arrow</li>
+          <li><span>Move Left: </span>A or Left Arrow</li>
+          <li><span>Move Down: </span>S or Down Arrow</li>
+          <li><span>Move Right: </span>D or Right Arrow</li>
+          <li><span>Rotate Clockwise: </span>E</li>
+          <li><span>Rotate Counter-clockwise: </span>Q</li>
+          <li><span>Toggle Selections: </span>R</li>
+          <li><span>Fire: </span>Space</li>
+        </ul>
+        <div class="actions-left-player-one">
+
+        </div>
+      </section>
       <canvas id="sliding-warfare"></canvas>
+      <section class="miscellaneous">
+        <nav class="github">
+          <a href="https://github.com/Davinism/SlidingWarfare" target="_blank">Github</a>
+        </nav>
+        <div class="reminders">
+          <ul class="reminders-list">
+            <li>Reminders:</li>
+            <li>W, A, S, D (or Arrow Keys), and the Space Bar all count as actions.</li>
+            <li>Be careful not to shoot your own teammates!</li>
+          </ul>
+        </div>
+        <div class="actions-left-player-two">
+
+        </div>
+      </section>
     </div>
   </body>
 </html>

@@ -1,8 +1,28 @@
-.canvas-container {
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+#canvas-container {
   display: flex;
 }
 
-.canvas-container canvas {
+#canvas-container canvas {
   margin: 0 auto;
   border: 1px solid #000;
 }
@@ -10,5 +30,89 @@
 .player-number {
   margin: 1% auto;
   text-align: center;
-  
+  font-family: "Orbitron";
+  font-size: 28px;
+}
+
+.instructions {
+  width: 25%;
+}
+
+.instructions .instructions-list li {
+  font-family: "Exo";
+  font-size: 15px;
+  margin: 5%;
+}
+
+.instructions .instructions-list li span {
+  font-weight: 700;
+}
+
+.miscellaneous {
+  width: 25%;
+}
+
+.miscellaneous .github {
+  font-family: "Orbitron";
+  font-weight: 700;
+  text-align: center;
+  font-size: 14px;
+  margin: 5%;
+}
+
+.miscellaneous .reminders .reminders-list li {
+  font-family: "Exo";
+  font-size: 15px;
+  margin: 5%;
+}
+
+.miscellaneous .reminders .reminders-list li:first-child {
+  font-weight: 700;
+}
+
+.actions-left-player-one {
+  border: 1px solid #000;
+  width: 80%;
+  height: 120px;
+  line-height: 120px;
+  text-align: center;
+  font-family: "Orbitron";
+  font-size: 60px;
+  margin: 0 auto;
+  margin-top: 60%;
+  color: #FF00BF
+}
+
+.actions-left-player-two {
+  border: 1px solid #000;
+  width: 80%;
+  height: 120px;
+  line-height: 120px;
+  text-align: center;
+  font-family: "Orbitron";
+  font-size: 60px;
+  margin: 0 auto;
+  margin-top: 100%;
+  color: #4891C0
+}
+
+.reset-button-container {
+  width: 15%;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Exo";
+  background: #69DC3F;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+.reset-button {
+  width: 100%;
+  height: 100%;
+  padding: 5% 2%;
+}
+
+.reset-button-container:hover {
+  background: #3AB41E;
 }
